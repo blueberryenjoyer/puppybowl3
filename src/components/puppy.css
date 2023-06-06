@@ -1,0 +1,9 @@
+.contacts-container {
+    display: flex;
+    list-style: none;
+}
+
+#team1,
+#team2 {
+    margin-right: 40%;
+}
