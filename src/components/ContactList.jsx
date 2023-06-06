@@ -42,7 +42,7 @@ export default function ContactList() {
                 <MapDogs inputDogs={dogs2} setChosenDog={setChosenDog} header='team 2' />
             </div>
 
-            <SelectedDog chosenDog={chosenDog} />
+            <SelectedDog chosenDog={chosenDog} setdogs1={setdogs1} setdogs2={setdogs2} />
 
             <MapDogs inputDogs={allDogs} setChosenDog={setChosenDog} header='all dogs' />
         </>
