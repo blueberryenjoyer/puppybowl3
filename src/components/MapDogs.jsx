@@ -2,7 +2,7 @@ import React from "react"
 
 export default function MapDogs({ inputDogs, setChosenDog, header }) {
     return (
-        <div id={`css${inputDogs}`}>
+        <div id={`css${header}`}>
             <h2>
                 {`${header}`}
             </h2>

@@ -2,7 +2,8 @@ import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react'
 import MapDogs from './MapDogs.jsx';
-import SelectedDog from './SelectedDog';
+import SelectedDog from './SelectedDog.jsx';
+import SearchBar from './SearchBar.jsx';
 import './puppy1.css'
 
 
@@ -45,6 +46,8 @@ export default function ContactList() {
             <SelectedDog chosenDog={chosenDog} setdogs1={setdogs1} setdogs2={setdogs2} />
 
             <MapDogs inputDogs={allDogs} setChosenDog={setChosenDog} header='all dogs' />
+
+            <SearchBar allDogs={allDogs} setChosenDog={setChosenDog} />
         </>
     );
 }
