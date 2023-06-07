@@ -6,6 +6,7 @@ import SelectedDog from './SelectedDog.jsx';
 import SearchBar from './SearchBar.jsx';
 import CreateDog from './CreateDog.jsx';
 import './puppy1.css'
+import PostDog from './dontrunthis.tsx';
 
 
 export default function ContactList() {
@@ -39,6 +40,7 @@ export default function ContactList() {
 
     return (
         <>
+            <PostDog />
             <div className="teams">
                 <MapDogs inputDogs={dogs1} setChosenDog={setChosenDog} header='team 1' />
                 <MapDogs inputDogs={dogs2} setChosenDog={setChosenDog} header='team 2' />
@@ -50,7 +52,8 @@ export default function ContactList() {
 
             <SearchBar allDogs={allDogs} setChosenDog={setChosenDog} />
 
-            <CreateDog setAllDogs={setAllDogs} allDogs={allDogs} />
+            <CreateDog setAllDogs={setAllDogs} />
+
         </>
     );
 }
