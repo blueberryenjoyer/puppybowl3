@@ -39,11 +39,17 @@ export default function PostDog() {
             console.error(err);
         }
     }
+    async function decline() {
+
+
+        alert('this is disabled in the production build');
+
+    }
 
     return (
         <div>
-            <button id='snoopButton' onClick={post}>add snoop ONCE PLEASE</button>
-            <button id='deleteButton' onClick={kill}>delete snoop (id is hardcoded to prevent accidents)</button>
+            <button id='snoopButton' onClick={decline}>add snoop ONCE PLEASE</button>
+            <button id='deleteButton' onClick={decline}>delete snoop</button>
         </div>
     )
 }
